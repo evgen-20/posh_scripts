@@ -1,4 +1,5 @@
-﻿$a = Get-Vm | Get-Harddisk | Where-Object {$_.Filename -like "*SSD_RAID10*"} | Select Filename, CapacityGB
+﻿#vmware 12123
+$a = Get-Vm | Get-Harddisk | Where-Object {$_.Filename -like "*SSD_RAID10*"} | Select Filename, CapacityGB
 $size = 0
 $a | % {
 $_.Filename
